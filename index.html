@@ -1,3 +1,269 @@
-<html>
-<h1>홍아잉 홈페이지</hi>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 한국 여행 & 미식 가이드</title>
+    <style>
+        :root {
+            --primary-color: #ff5722;
+            --secondary-color: #3f51b5;
+            --bg-color: #f9f9f9;
+            --text-color: #333;
+            --card-bg: #fff;
+        }
+        body {
+            font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #ff5722, #ff9800);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 60px;
+        }
+        h2 {
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 1.8em;
+            color: #222;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .card-img {
+            height: 180px;
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-size: 0.9em;
+            background-size: cover;
+            background-position: center;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card-content h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.3em;
+            color: #111;
+        }
+        .card-content p {
+            margin: 0;
+            font-size: 0.95em;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #222;
+            color: white;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🇰🇷 나의 한국 여행 & 미식 가이드</h1>
+        <p>서울의 매력적인 명소 10곳과 꼭 맛봐야 할 한국 음식 10가지를 소개합니다.</p>
+    </header>
+
+    <div class="container">
+        <!-- Seoul Attractions -->
+        <section>
+            <h2>🏛️ 서울 여행지 BEST 10</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="card-content">
+                        <h3>1. 경복궁</h3>
+                        <p>조선 시대의 정궁으로 웅장한 건축미와 수문장 교대식을 볼 수 있는 곳.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="card-content">
+                        <h3>2. N서울타워</h3>
+                        <p>남산 서울타워에서 내려다보는 서울의 환상적인 야경.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1517840905430-5eba7f7c13da?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="card-content">
+                        <h3>3. 북촌 한옥마을</h3>
+                        <p>전통 한옥들이 아름답게 보존되어 있는 도심 속 역사 거리.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1546874177-dd2660c6d37a?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="card-content">
+                        <h3>4. 명동</h3>
+                        <p>쇼핑과 다양한 길거리 음식을 즐길 수 있는 번화가.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="card-content">
+                        <h3>5. 홍대</h3>
+                        <p>인디 음악, 젊음의 거리, 독특한 카페와 버스킹이 넘치는 곳.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="card-content">
+                        <h3>6. 동대문 디자인 플라자 (DDP)</h3>
+                        <p>자하 하디드가 설계한 미래지향적 건축물과 트렌디한 전시 공간.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="card-content">
+                        <h3>7. 한강공원</h3>
+                        <p>서울 시민들의 쉼터이자 치킨과 라면을 즐기며 야경을 감상하는 명소.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="card-content">
+                        <h3>8. 광장시장</h3>
+                        <p>빈대떡, 마약김밥 등 전통 시장의 활기찬 먹거리가 가득한 곳.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="card-content">
+                        <h3>9. 롯데월드 타워 & 석촌호수</h3>
+                        <p>서울에서 가장 높은 전망대와 아름다운 호수 산책로.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1609137144881-540b59ac2940?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="card-content">
+                        <h3>10. 인사동</h3>
+                        <p>전통 공예품, 갤러리, 전통찻집이 모여 있는 문화의 거리.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Korean Foods -->
+        <section>
+            <h2>🍲 한국 음식 BEST 10</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1553163147-622ab57be1c9?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="card-content">
+                        <h3>1. 비빔밥</h3>
+                        <p>각종 나물과 고기, 고추장을 쓱쓱 비벼 먹는 대표 한식.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="card-content">
+                        <h3>2. 불고기</h3>
+                        <p>얇게 썬 소고기를 양념에 재워 구워 먹는 달콤 짭조름한 요리.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="card-content">
+                        <h3>3. 치맥 (치킨 & 맥주)</h3>
+                        <p>바삭한 치킨과 시원한 맥주의 환상적인 조합.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="card-content">
+                        <h3>4. 떡볶이</h3>
+                        <p>매콤달콤한 소스에 쫄깃한 떡과 어묵이 들어간 국민 간식.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="card-content">
+                        <h3>5. 삼겹살</h3>
+                        <p>두툼한 돼지고기 삼겹살을 불판에 구워 쌈에 싸 먹는 요리.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="card-content">
+                        <h3>6. 김치찌개</h3>
+                        <p>잘 익은 김치와 돼지고기를 넣고 얼큰하게 끓여낸 찌개.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="card-content">
+                        <h3>7. 냉면</h3>
+                        <p>시원하고 깔끔한 육수에 쫄깃한 면발이 일품인 여름철 별미.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="card-content">
+                        <h3>8. 설렁탕</h3>
+                        <p>사골을 오랜 시간 푹 끓여내 진하고 담백한 국물 요리.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="card-content">
+                        <h3>9. 잡채</h3>
+                        <p>당면과 다양한 채소를 간장 양념에 볶아낸 잔치 음식.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="card-content">
+                        <h3>10. 호떡</h3>
+                        <p>쫄깃한 반죽 속에 설탕과 견과류를 넣고 기름에 구워낸 달콤한 길거리 간식.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 나의 한국 여행 & 미식 가이드. All Rights Reserved.</p>
+    </footer>
+
+</body>
 </html>
